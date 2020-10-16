@@ -1,0 +1,50 @@
+div
+{
+    color: black;
+    border: 1px solid gray;
+    padding: 3px;
+    outline-style: groove;
+    outline-color: green;
+    outline-width: 5px;
+    outline-offset: 5px;
+    line-height: 30px;
+}
+
+h1
+{
+    text-align: center;
+    text-transform: uppercase;
+    color: #4CAF50;
+    font-size: 200%;
+}
+
+p
+{
+    border: 2px dotted blue;
+  text-align: justify;
+    text-indent: 1em;
+    letter-spacing: 3px;
+    color: white;
+    text-transform: capitalize;
+    word-spacing: 7px;
+    font-family: consolas;
+}
+
+/*h1:hover
+{
+    color: darkblue;
+    text-transform: capitalize;
+    cursor: grabbing;
+    font-size: 90px;
+    font-family: sans-serif;
+}*/
+
+a {
+  text-decoration: none; /*It will remove underline from the link and text.*/
+  color: brown;
+}
+
+body
+{
+    background-color: black;
+}

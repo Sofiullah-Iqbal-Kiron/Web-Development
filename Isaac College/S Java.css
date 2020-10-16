@@ -1,0 +1,64 @@
+		h3
+		{
+			color: red;
+            text-align: center;
+		}
+        
+		.city
+		{
+			background-color: green;
+			color: white;
+			border: 2px solid black;
+			margin: 20px;
+			padding: 20px;
+            position: inherit;
+		}
+
+		.note
+		{
+			font-size: 120%;
+			color: cyan;
+		}
+
+p
+{
+    color: black;
+    background-color: antiquewhite;
+    font-family: georgia, "Times New Roman";
+    text-indent: 25px;
+    letter-spacing: 1px;
+    word-spacing: 7px;
+    line-height: 19px;
+    padding: 10px;
+    padding-bottom: 1px;
+}
+
+h3.TheFujiApple
+{
+    color: black;
+    font-family: monospace;
+    letter-spacing: 5px;
+    font-size: 150%;
+    padding: 5px;
+    border-bottom-style: dashed;
+    border-bottom-color: cadetblue;;
+    border-bottom-width: 4px;
+}
+
+h3.TheFujiApple:hover
+{
+    color: blue;
+    font-size: 190%;
+    font-family: cursive;
+    cursor: alias;
+}
+
+div.city
+{
+    background-color: azure;
+    padding: 15px;
+    padding-bottom: 4px;
+    border: 5px groove blue;
+    outline: 5px dotted green;
+    outline-offset: 2px;
+}

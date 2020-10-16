@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <title>My CSS Practice sheet</title>
+    <!-- In the style sheet: "body" is the selector.
+         -> "selector" statements are enclosed by curly braces.
+         -> property: property-value;
+         -> "id" selector starts with hashtag.
+         -> "class" selector starts with a dot.
+         -> "h2.center" means, the class "center" only affect on "h2".
+         -> A class / id name can't starts with number.
+         -> And * is the universal selector. For all the elements, just put an asterisk instead of selector name.
+         -> Or we can group all the selectors by commas.
+         -> "%20" recongnized as a white space. "alt" means, alternative text. If the image couldn't load due to slow internet, the text will shown instead of image.
+    -->
+         
+    <style>
+        body
+        {
+            background-color: aliceblue;
+            font-size: 30 px;
+            font-family: monospace;
+        }
+        
+        h1
+        {
+            text-align: center;
+            color: aqua;
+        }
+        
+        h2.center
+        {
+            text-align: center;
+            color: black;
+        }
+        
+        h4
+        {
+            text-align: left;
+            color: cadetblue;
+            font-size: 120%;
+        }
+        
+        p.center
+        {
+            text-align: center;
+            font-family: inherit;
+            color: red;
+        }
+        
+        p.large
+        {
+            font-size: 200%;
+        }
+        
+        h1, h2
+        {
+            font-family: cursive;
+        }
+    </style>
+    
+    <body><h1>This Is a H1 Heading</h1><p>Do you know something about CSS? <b>CSS</b> stands for <i>Cascading Style Sheets</i>. "%20" recongnized as a white space. "120%" means, the size will increases 1.2 times of main size or (mainSize * 1.2).<br>There are three ways of inserting a CSS:-<ol><li>External CSS</li><li>Internal CSS</li><li>Inline CSS</li></ol><h4>External CSS:</h4> An external CSS included at the head section of the main html file.</p><p class="center large">Let's do something new...This paragraph will be red, center-aligned, and in a large font-size.</p><img src="All%20CSS%20Simple%20Selectors.png" alt="All CSS Simple Selectors" width="1000 px"></body>
+</head>

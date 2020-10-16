@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<!-- Browsers are the compiler for html.
+  -> We can make comments as IntelliJ IDEA's shorcut: Select the text to be commented and press ctrl + shift + forword slash(/).-->
+<html>
+    <head>
+        <!-- My css code not working. Due to this problem, I feel me like an absolute noob.
+             After a long survey, I fixed the bug.
+             -> If there are more than one style sheets then last positioned style sheet will considered by browser to execute.
+        -->
+        <link rel="stylesheet" href="myStyle.css">
+        <style>
+            /*
+            CSS comments are not same as HTML commnets but C / C++ / Java commnets.
+            */
+            /*p
+            {
+                color: blue
+                     I don't put a semicolon because of here exist just one selector. 
+            }*/
+        </style>
+    </head>
+    <!-- Section 1: What I doing here -->
+    <body>
+        Do you know something about this? Why my .css file couldn't load!!! The bloody chain smoker.
+        <h2 class="BaseType">Base Topic</h2>
+        <p class="OverInline">
+            <b>Here I put an example for Inline css with "style" command. style="background: #99ff99; text-align: center" An example of inline css. Okay? Now okay. I'm done here. If there are more than one style sheets then last positioned style sheet will considered by browser to execute. We can make comments as IntelliJ IDEA's shorcut: Select the text to be commented and press ctrl + shift + forword slash(/). Due to this problem, I feel me like an absolute noob. After a long survey, I fixed the bug. Currently I faced a new problem, "border" property is not supporting. Let's start the journey right now. Here is just very bare bones html structure. Inherit: The element inherit propertiy form the parent element. Margin property sequecne is top-right-bottom-left: Means, clock-wise from top. You can put the values in "px", "pt" or "cm" units. '%' units are also applicable here thats mean X% of the current element and "auto" value also. The CSS "padding" properties are used to generate space around an element's content, inside of any defined borders. CSS class name does not contain any empty space. "letter-spacing: -2px;" mene newa jay. And "!important" overrides any CSS internal command to execute this whatever happens.</b>
+            Text formatting:
+            <ol>
+                <li>text-indent</li>
+                <li>letter-spacing</li>
+                <li>line-height</li>
+                <li>word-spacing</li>
+            </ol>
+        </p>
+        
+        <!-- Section 2: CSS colors -->
+        <h4 style="text-align: center;">Color Discussion</h4>
+        <p style="color:black; background-color: whitesmoke;">
+            HTML/CSS supports 140 color name. You can get total list of the colors from <a href="https://www.w3schools.com/colors/colors_names.asp">w3schools</a> color reference cite. Although, there are many color processing syntax as:-
+            <ol style="font-family: sans-serif">
+                <li>Color Name. By default, I use this.</li>
+                <li>RGB(int red, int green, int blue) in [0, 255] interval. If value of all parameters are same than it will produce different sets of gray. All 255 is white and all 0 is black.</li>
+                <li>RGBA(int red[0, 255], int green[0, 255], int blue[0, 255], int absolute[0, 1])</li>
+            </ol>
+        </p>
+        
+        <!-- Section 3: CSS background -->
+        <h4>Make beautiful background</h4>
+        <p style="background-image: url(eid-kashmir.jpg); background-repeat: no-repeat; background-attachment: scroll; background-position: top right">
+            The CSS background property is used to give nice background to a HTML file.
+        </p>
+        
+        <!-- Section 4: CSS Border Class -->
+        <h4 style="font-family: serif;">Let's create some border around text fields</h4>
+        <p style="border-style: groove;">
+            1. Various border collection. This is a text with border. An example of groove border.
+        </p>
+        <p style="border-style: double">
+            2. Various border collection. This is a text with border. An example of double border.
+        </p>
+        <p style="border-style: hidden;">
+            3. Various border collection. This is a text with border. An example of <b>hidden</b> border.
+        </p>
+        <p style="border-style: outset;">
+            4. Various border collection. This is a text with border. An example of <b>outset</b> border.
+        </p>
+        <p style="border-style: dashed;">
+            5. Various border collection. This is a text with border. An example of <b>dashed</b> border.
+        </p>
+        
+        <!-- Section 4 -->
+        <div class="Divison">
+            <h3>Height and Width</h3>
+            <p>
+                CSS height and width not includes borders, margins and paddings.
+            </p>
+        </div>
+        <div style="max-height: 100px">
+                 Here I put an example for Inline css with "style" command. style="background: #99ff99; text-align: center" An example of inline css. Okay? Now okay. I'm done here. If there are more than one style sheets then last positioned style sheet will considered by browser to execute. We can make comments as IntelliJ IDEA's shorcut: Select the text to be commented and press ctrl + shift + forword slash(/). Due to this problem, I feel me like an absolute noob. After a long survey, I fixed the bug. Currently I faced a new problem, "border" property is not supporting. Let's start the journey right now. Here is just very bare bones html structure. Inherit: The element inherit propertiy form the parent element. Margin property sequecne is top-right-bottom-left: Means, clock-wise from top. You can put the values in "px", "pt" or "cm" units. '%' units are also applicable here thats mean X% of the current element and "auto" value also. The CSS "padding" properties are used to generate space around an element's content, inside of any defined borders. One massive file of CSS is very very challenging to maintain.
+        </div>
+        
+        <!--Section 4: Text Shadow-->
+        <div style="border: 2px solid blue;">
+            <h3 class="TextShadow">Text Shadowing</h3>
+            <p style="color: green;">
+                Here we discussed about text shadowing.
+            </p>
+        </div>
+    </body>
+</html>

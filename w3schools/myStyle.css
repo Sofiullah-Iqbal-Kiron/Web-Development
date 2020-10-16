@@ -1,0 +1,68 @@
+/*
+Selector
+{
+    property: property-value;
+}
+*/
+
+p
+{
+    text-align: justify;
+    color: cadetblue;
+    font-family: monospace;
+    background-color: floralwhite;
+}
+
+h2.BaseType
+{
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: cursive;
+    font-size: 40px;
+    border-left: 3px dotted #ffccff;
+    border-right: 3px dotted #ffccff;
+    border-top: 9px solid green;
+    border-bottom: 5px solid #ffccff;
+    outline: 2px dotted green;
+    outline-offset: 3px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    text-shadow: 3px 3px;
+    cursor: grab;
+}
+
+p.OverInline
+{
+    color: black;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+h3
+{
+    font-family: cursive
+}
+
+h3.TextShadow
+{
+    color: blue;
+    text-align: center;
+}
+
+h4
+{
+    color: currentColor;
+    font-family: sans-serif;
+    font-style: oblique;
+    font-size: 110%;
+    background-color: chartreuse;
+}
+
+div.Divison
+{
+    height: 200px;
+    width: 300px;
+    background-color: aqua;
+    border-left: 2px green double;
+}
