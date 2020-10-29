@@ -1,0 +1,58 @@
+div.UpperHeadDivision
+{
+    background-color: #ffe6ff;
+    color: #1aa3ff;
+    font-family: 'Piazzolla', serif;
+    text-shadow: 3px 3px 3px green;
+    padding-bottom: 0.5em;
+    margin-left: 17em;
+    margin-right: 17em;
+    border-top-left-radius: 1em;
+}
+
+div.TopNavigationBar
+{
+    background-color: #c2c2a3;
+    padding: 1.3em;
+    border-left: 7px solid green;
+    margin-right: 50em;
+}
+
+div.TopNavigationBar a.topNavLinks
+{
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+div.TopNavigationBar a.topNavLinks:hover
+{
+    background-color: #00cc00;
+    color: white;
+    font-size: 105%;
+}
+
+div.TopNavigationBar div
+{
+    display: inline;
+}
+
+a.active
+{
+    background-color: #00e600;
+    color: black;
+    font-weight: bold;
+}
+
+a.active:hover
+{
+    background-color: #00cc00;
+    color: white;
+    font-size: 105%;
+}
+
+p
+{
+    max-width: 1000px; /* Setting up max-width instead of width is more suitable for small screen / devices. */
+    margin: auto;
+}

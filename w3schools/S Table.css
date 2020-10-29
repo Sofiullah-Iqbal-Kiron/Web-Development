@@ -1,0 +1,39 @@
+table
+{
+    margin-left: auto; /*Now the table is center aligned.*/
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 5px solid black;
+}
+
+th
+{
+    color: white;
+    padding: 0.4em;
+    background-color: green;
+}
+
+tr
+{
+    font-size: 102%;
+    text-align: center;
+}
+
+td
+{
+    padding: 2px;
+}
+
+tr:hover
+{
+    background-color: gray;
+    color: white;
+}
+
+td:hover
+{
+    background-color: #99ff99;
+    color: red;
+    font-size: 110%;
+    border: 1px dotted black;
+}

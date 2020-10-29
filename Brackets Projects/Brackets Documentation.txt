@@ -1,0 +1,11 @@
+Brackets is an open source code editor from Adobe which is well suited for front-end web developers. It is written in HTML, CSS and JavaScript.
+
+1. Ctrl + + : increase font size.
+2. Ctrl + - : decrease font size.
+3. Ctrl + Shift + H : Show / Hide sidebar.
+4. Ctrl + Alt + P : Live preview.
+5. Alt + Shift + downArrow : Adds another cursor to the nextLine.
+6. Alt + Shift + upArrow : Adds another cursor to the previousLine.
+7. Drag a folder from file explorer and drop this on bracket : Opens full folder on brackets.
+8. Press and hold Ctrl and click on the places by mouse : Multiple cursors in random places.
+9. Esc : To get out of multiple cursor mode.

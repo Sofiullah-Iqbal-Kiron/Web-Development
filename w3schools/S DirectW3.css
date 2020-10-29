@@ -18,30 +18,60 @@ h1
     font-size: 200%;
 }
 
+/*I created this minimized file by CSS minifier on a robust web application. By minimizing, the code will took low bytes in the memory.*/
+h1{text-align:center;text-transform:uppercase;color:#4caf50;font-size:200%}
+
 p
 {
     border: 2px dotted blue;
-  text-align: justify;
+    text-align: justify;
     text-indent: 1em;
     letter-spacing: 3px;
     color: white;
     text-transform: capitalize;
     word-spacing: 7px;
     font-family: consolas;
+    font-family: 'Chilanka';
+    /*font: italic bold 32px/16px chilanka;*/
 }
 
-/*h1:hover
+h1:hover
 {
     color: darkblue;
-    text-transform: capitalize;
+    text-transform: none;
     cursor: grabbing;
     font-size: 90px;
     font-family: sans-serif;
-}*/
+}
 
-a {
-  text-decoration: none; /*It will remove underline from the link and text.*/
-  color: brown;
+a:link /*Priority maintain*/
+{
+    text-decoration: none; /*It will remove underline from the link and text.*/
+    color: black;
+    background-color: beige;
+    font-weight: bolder;
+    font-family: 'Merriweather', serif;
+    padding: 6px;
+    border: 5px groove green;
+}
+
+a:visited
+{
+    color: black;
+    background-color: yellow;
+}
+
+a:hover
+{
+    color: white;
+    background-color: green;
+    text-shadow: 1px 1px 1px blue;
+}
+
+a:active
+{
+    color: aqua;
+    background-color: gray;
 }
 
 body
