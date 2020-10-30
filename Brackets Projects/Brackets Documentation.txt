@@ -1,5 +1,6 @@
-Brackets is an open source code editor from Adobe which is well suited for front-end web developers. It is written in HTML, CSS and JavaScript.
+Brackets is an open source code editor from Adobe which is well suited for front-end web developers. It is written in HTML, CSS and JavaScript. It is better than Notepad++ and Atom of Github. Cause those editors do not contain live preview feature which is most helpful / more useful for web development.
 
+Shortcut menu list:-
 1. Ctrl + + : increase font size.
 2. Ctrl + - : decrease font size.
 3. Ctrl + Shift + H : Show / Hide sidebar.
