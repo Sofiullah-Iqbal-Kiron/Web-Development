@@ -1,0 +1,35 @@
+<!-- Format codes with Prettier(https://prettier.io/playground/) then auto indent here(ctrl + shift + I) -->
+
+<!-- String in JS same as Java to concatinate and define strings same as Python, we can use double or single quote to define a string literal and no extra char type variables. -->
+<!-- Equality check by Triple equal sign ( === ) is the way of JS to check strict equality and they are same type also. Wheres two equal signs check quality only upon values. -->
+<!-- Multi-cursor: ctrl + alt + click -->
+<!-- No need to put curly braces after single statement inside if-else block. -->
+<!-- Windows space button seems click on a HTML page button. -->
+<!-- There is a couple of ways to define a variable, if we wanna define a variable whose value is never going to change, then use 'const' keyword. 'final' in Java, #define in C and also 'const' in C++. -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>COUNTER</title>
+        <script>
+            let counter = 0; // Declaring and initializing a variable by let keyword.
+
+            function count(){
+                counter++; // Like C, C++, Java(Python also?).
+                alert('You pressed the button ' + counter + ' times.') // Like Java
+            }
+
+            function changeH1() {
+                let heading1 = document.querySelector("h1");
+                if (heading1.innerHTML === "Counting with Variables.")
+                    heading1.innerHTML = "GoodBye!";
+                else heading1.innerHTML = "Counting with Variables.";
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Counting with Variables.</h1>
+        <!--        Let's add onclick type handler to this particular button. -->
+        <button onclick="count()">Counter Here</button>
+        <button onclick="changeH1()">Change H1</button>
+    </body>
+</html>
