@@ -1,2 +1,5 @@
 Course link:
 https://www.youtube.com/watch?v=x5trGVMKTdY
+
+DOM: Document Object Model.
+When a web page loaded, browser make a DOM of it to manipulate the documents via JavaScript. That why, we can manipulate DOM with JS.

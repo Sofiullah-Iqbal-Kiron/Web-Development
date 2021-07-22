@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Task Manager</title>
+    </head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // First of all, disable the submit button
+            document.querySelector("#submit").disabled=true;
+            // Now turn it into inable when keyup
+            document.querySelector("task").onkeyup=()=>{
+                document.querySelector("submit").disabled=false;
+            }
+
+            document.querySelector("form").onsubmit = () => {
+                const task = document.querySelector("#task").value;
+                const li = document.createElement("li");
+                li.innerHTML = task;
+                // Not allow to user to append empty ballpoint field, we use condition.
+                // Or, make submit button disable, by default.
+                if (task != "") document.querySelector("#tasks").append(li);
+                document.querySelector("#task").value = "";
+
+                // Stop form from submitting
+                return false;
+            };
+        });
+
+    </script>
+    <body>
+        <h1>Tasks:</h1>
+        <ul id="tasks"></ul>
+        <form>
+            <input autofocus id="task" placeholder="New Task" type="text">
+            <input id="submit" type="submit">
+        </form>
+    </body>
+</html>

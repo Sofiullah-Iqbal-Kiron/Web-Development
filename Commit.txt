@@ -1,1 +1,13 @@
 Current folder is a git repository.
+
+Make buttons with awesome hover effect.
+Add animations.
+Frames, borders, drop down menus.
+Change interface style on hover.
+Picture more.
+View compatibility.
+Video instruction.
+Awesome lists and table also.
+Marque.
+Nice picture gallery.
+Colour animate by JS: Put colours into an array and change colour of an element after a certain period of time.
