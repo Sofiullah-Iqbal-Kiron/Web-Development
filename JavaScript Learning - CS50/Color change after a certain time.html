@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Change color after a certain period of time</title>
+    <script>
+      let colors = [
+        "#1abc9c",
+        "#2ecc71",
+        "#3498db",
+        "#9b59b6",
+        "#34495e",
+        "#7f8c8d",
+        "#bdc3c7",
+        "#c0392b",
+        "#d35400",
+        "#f1c40f",
+        "#ecf0f1",
+      ];
+
+      let i = 0;
+
+      document.
+
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelector("#changecolor").onclick = () => {
+         setTimeout(()=> {
+          document.querySelector("h1").style.color = colors[i++];
+          if (i === 11) i = 0;
+        }, 3000);
+      };
+    </script>
+  </head>
+  <body>
+    <h1>Hello, World!</h1>
+    <button id="changecolor">Change Color</button>
+  </body>
+</html>

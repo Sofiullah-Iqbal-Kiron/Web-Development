@@ -1,0 +1,6 @@
+This is the Harvard University course of "Web programming with Python and JavaScript". Lecture 0 of HTML and CSS.
+
+Course link:
+https://www.youtube.com/watch?v=zFZrkCIc2Oc&list=PLZHrXL7SW1gPrgpXDa8xtYAvmHfZtUq0i&index=7
+
+-> HTML is language for describe a web page. CSS is the language for style a web page, like put colors, fonts, layouts, border, margin, padding etc.

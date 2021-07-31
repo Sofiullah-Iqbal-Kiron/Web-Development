@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tasks</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        //   By default, submit button should be disabled.
+        document.querySelector("#submit").disabled = true;
+
+        // Enable the submit button on keyup. (I can't implement full version as in class.)
+        document.querySelector("#task").onkeyup = () => {
+          document.querySelector("#submit").disabled = false;
+        };
+
+        // First of all, figure out what the user actually typed in.
+        document.querySelector("form").onsubmit = function () {
+          // Get trimmed version of input value and store it on a constant curr_task.
+          const curr_task = document.querySelector("#task").value.trim();
+
+          //   Now let's create an element of li type.
+          const litem = document.createElement("li");
+
+          //   Set it's innerHTML whatever user actually typed in.
+          litem.innerHTML = curr_task;
+          if (curr_task != "") document.querySelector("ul").append(litem);
+          document.querySelector("#task").value = "";
+          document.querySelector("#submit").disabled = true;
+
+          //   Stop form from submitting.
+          return false;
+        };
+      });
+    </script>
+  </head>
+  <body>
+    <h1 style="font-family: monospace; background-color: white">Your Tasks</h1>
+    <ul></ul>
+    <form>
+      <input autofocus type="text" id="task" placeholder="Add Task" />
+      <input id="submit" type="submit" />
+    </form>
+  </body>
+</html>

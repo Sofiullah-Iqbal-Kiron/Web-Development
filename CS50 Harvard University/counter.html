@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Counter</title>
+    <script>
+      if (!localStorage.getItem("count")) {
+        localStorage.setItem("count", 0);
+      }
+
+      function increment() {
+        let count = localStorage.getItem("count");
+        count++;
+        document.querySelector("h1").innerHTML = count;
+        localStorage.setItem("count", count);
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        setInterval(increment, 1000);
+      });
+    </script>
+  </head>
+  <body>
+    <h1>0</h1>
+  </body>
+</html>

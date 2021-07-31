@@ -1,0 +1,42 @@
+Elements we should use:
+1. Heading: h1 to h6
+2. List: ordered list(ol), unordered list(ul)
+3. Input: type = [text, submit, dropdown menu, checkbox], attributes = [placeholder, autofocus, name(to access later), ]
+4. Button: normal
+5. Marquee
+6. Picture
+7. Link
+8. Form
+9. Table
+
+-> Some tags are self-closing with attributes. <img src="" alt="" width="" height="">
+
+-> One best feature of JS is event-dirven programming. We can programatically update the contents of the website. For this, we will use DOM manipulation feature of JS.
+
+-> Function declaration: function fun_name() { // code goes to here. }
+
+-> document.querySelector('element') will return an object type so we can store it on a variable. As: let portion = document.querySelector("h1");
+
+-> JS uses a set of backtic and ${} notation in order to pulgging in some variable inside a string. Or, Java like concatenation also supported by JS.
+
+-> document.addEventListener('event', function(){}); Runs the function(that argumented here) when the specified event occurred anywhere on the document. If you provide the function name, don't inculde parenthesis cause it seems you calling the function ifself. document.addEventListener() attaches an event handler to the entier document. document.removeEventListener() remove an event handler that has been attached with document.addEventListener() method. element.addEventListener() attaches an event handler to the specified element.
+
+-> 'DOMContentLoaded' is an event that triggered when the DOM of the page is fully loaded.
+
+-> document.querySelector("tag(first one only)"), document.querySelector("#id"), document.querySelector(".class"), we can access elements as we did in CSS. document.querySelector("#id"):- get me the element with that particular id. document.querySelectorAll() gonna return an array of matched elements.
+
+-> Events: onclick, onsubmit, onchange, onmouseover, onload, onblur, onkeydown, onkeyup
+
+-> Checkout the code from start point. LocalStorage, Interval.
+
+-> sleep() like functions: setTimeOut() then clearTimeOut() does reverse of it.
+
+-> We can modify the code on JS console via bringing up inspect.
+
+-> localStorage.setItem(key, value), localStorage.getItem(key): this two functions allow us to store and retrive data from the local browser of client. It is a DOM window localStorage property. The localStorage and sessionStorage property allows to save key-value pairs in a web browser. The data will not be deleted when the browser is closed and will be available next day, month or year. localStorage is read-only. Can use sessionStorage to store data for a single session only. Data will be deleted when the tab/session/browser is closed.
+
+-> Use this keyword in drop-down menu.
+
+-> JS object is really close equivalent to Python dictionary. let person = {first: "Sofiullah", second: "Iqbal", third: "Kiron"}; To access, 'person.first'(seems easy) or 'person["first"]'. We can call it, system to store object = {property: value} as in Java, Key-Value (K-V) pair.
+
+-> JS enables us to display alerts. In order to add content to the web page and manipulate the DOM. By JS, we have the ability to create single page application. Single-Page application is more useful and time saving process.
