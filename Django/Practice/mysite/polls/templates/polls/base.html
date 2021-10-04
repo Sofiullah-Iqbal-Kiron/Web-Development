@@ -1,0 +1,19 @@
+{# title, body #}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>
+            {% block title %}
+            {% endblock title %}
+        </title>
+        {% block styles %}
+            {# styles goes to here #}
+        {% endblock %}
+	</head>
+	<body>
+        {% block body %}
+            {# put body elements here #}
+        {% endblock body %}
+    </body>
+</html>

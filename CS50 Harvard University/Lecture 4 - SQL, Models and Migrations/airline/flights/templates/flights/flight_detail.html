@@ -1,0 +1,15 @@
+<!-- the_flight -->
+{% extends "flights/layout.html" %}
+
+{% block title %}
+    Flight {{ the_flight.pk }} details
+{% endblock title %}
+
+{% block body %}
+    <h1>Flight {{ the_flight.pk }}:</h1>
+    <ul>
+        <li>Origin: {{ the_flight.origin }}</li>
+        <li>Destination: {{ the_flight.destination }}</li>
+        <li>Duration: {{ the_flight.duration }}</li>
+    </ul>
+{% endblock body %}

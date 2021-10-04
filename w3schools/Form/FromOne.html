@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Form Practice</title>
+	</head>
+	<body>
+		<h3>HTML From</h3>
+		<p><a href="https://www.w3schools.com/html/html_forms.asp"></a></p>
+		<p>
+			An <b>HTML form</b> is used to collect user input and sends to the
+			server for further processing. An form element is a container for
+			different types of input elements like buttons, text fields,
+			checkboxes, radio buttons etc. The default width of an input field
+			is 20 characters.
+		</p>
+		<h4>Form Attributes</h4>
+		<p>
+			<ul>
+				<li><b>action="file_name.ext"</b> attribute defines the action to perform when the form is submitted. After submitting, the form data is sent to a file on the server. That file contains a server-side script to handle those data. If the <b>action</b> attribute is omitted, default action is set to redirect the current page.</li>
+				<li><b>target="_self | _blank"</b> attribute specifies where to display the content that is returned by the server as a response against a request that was triggered when a user submitted the corresponding form.</li>
+				<li><b>method="GET | POST | dialog"</b> attribute specifies the HTTP(isn't HTTPS more secure?) method to be used when submitting the form. Default value is GET. Never use GET to send sensitive data. The submitted form data is visible in the URL. From data appended to the action URL with a ? separator. On the other hand, POST method is processed by the server. Appends form-data inside the body of the HTTP request. That's why it's more secure to hide sensitive data.</li>
+				<li><b>name="form_name"</b> attribute</li>
+			</ul>
+			<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form">MDN web docs: form</a>
+		</p>
+		<h3>The form here</h3>
+		<form
+			action="file_to_get_form_data.ext"
+			name="test_form"
+			method="POST"
+		></form>
+		<h4>Form elements would be:</h4>
+		<ol>
+			<li>input: most used</li>
+			<li>label</li>
+			<li>select: drop down menu list</li>
+			<li>textarea</li>
+			<li>button</li>
+			<li>fieldset</li>
+			<li>legend</li>
+			<li>datalist</li>
+			<li>output</li>
+			<li>option</li>
+			<li>optgroup</li>
+		</ol>
+		<h4>INPUT</h4>
+		<form action="">
+			<label for="first_name">First name: </label
+			><input type="text" id="first_name" value="Default Value" /><br />
+			<label for="fav_lang">HTML</label
+			><input type="radio" id="fav_lang" /><br />
+			<input type="checkbox" /><br />
+			<input type="submit" /><br />
+			<input type="button" /><br />
+			<input type="color" /><br />
+			<input type="time" /><br />
+			<input type="date" /><br />
+			<input type="week" />
+		</form>
+		<h4>HTML &lt;select&gt; tag:</h4>
+		HTML &lt;select&gt; tag creates a drop-down list. required attribute:
+		the user is required to select a value from the drop-down list before
+		submitting the form. The &lt;option&gt; tag defines an option in a
+		&lt;select&gt;/&lt;optgroup&gt;/&lt;datalist&gt; and value attribute
+		will sent to the server for backend processing.
+		<form action="" id="lang_form">
+			<label for="languages">Select one language you like: </label>
+			<select
+				name="languages"
+				id="languages"
+				form="lang_form"
+				size="1"
+				autofocus
+				required
+			>
+				<option value="C">C</option>
+				<option value="C++">C++</option>
+				<option value="Java" selected>Java</option>
+				<option value="JavaScript">JavaScript</option>
+				<option value="Python">Python</option>
+			</select>
+		</form>
+	</body>
+</html>

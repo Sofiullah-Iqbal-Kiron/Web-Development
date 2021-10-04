@@ -1,0 +1,80 @@
+***** What it actually is,
+Django is a high-level Python web framework(like Spring-Boot in Java) that encourages rapid development and clean, pragmatic design. Make your web page more dynamic. The newspaper webpages are dynamic. Every users liking on posts, commenting on comment section as well. To handle those issues, we need web based program. In this case, Django become handy, basically must usable framework.
+
+
+***** Commands in Windows,
+Install Django: "py -m pip install Django"
+Check version: "py -m django --version"
+Start project as an admin: "django-admin startproject project_name"
+Start project as an admin without creating an additional directory: "django-admin startproject project_name ."
+
+
+***** Tutorials,
+Sir Brian Yu: https://youtu.be/w8q0C-C1js4
+Django official website: https://www.djangoproject.com/
+Mosh: https://youtu.be/rHux0gMZ3Eg
+TemplateDoesNotExist: https://youtu.be/RWAKahsR1_g
+CS Dojo: https://youtube.com/playlist?list=PLBZBJbE_rGRXBhJNdKbN7IUy-ctlOFxA1
+
+
+*****
+Every Django project is a collection of several apps. Each app provides a certain piece of functionality to the entire project. Assume Google is a main project and Google Drive, Google Photos, Google Keep's are several apps under the google project.
+settings.py for project level configuration/setting.
+# Application definition
+
+INSTALLED_APPS = [
+    'django.contrib.admin', # Admin interface for managing our data.
+    'django.contrib.auth', # User authentication.
+    'django.contrib.contenttypes',
+    'django.contrib.sessions', # Temporary memory on the server for manage user data.
+    'django.contrib.messages', # Send one time message to the user.
+    'django.contrib.staticfiles', # Store some certain static files like images, css, videos as well.
+]
+
+
+*****
+Each view is responsible for doing one of two things: returning an HttpResponse object containing contents for the requested page, or raising an exception such as Http404. The rest is up to me. All django views wants either HttpResponse or exception.
+
+
+*****
+Models: Each models maps to a single database table.
+-> Each model is a Python class that subclasses django.db.models.Model
+-> Each attribute of the model represents a database field-column.
+-> Django has atomatic database access API.
+
+
+*****
+https://docs.djangoproject.com/en/3.2/ref/models/fields/
+
+Field Types:
+AutoField:
+BigAutoField:
+BigIntegerField:
+BinaryField:
+BooleanField:
+CharField:
+DateField:
+DateTimeField:
+DecimalField:
+DurationField:
+EmailField:
+FileField:
+FilePathField:
+FloatField:
+ImageField:
+IntegerField:
+GenericIPAddressField:
+JSONField:
+NullBooleanField:
+PositiveBigIntegerField:
+PositiveIntegerField:
+PositiveSmallIntegerField:
+SlugField:
+TextField(**options): A large text field.
+
+
+*****
+Template: A django template is text document or a Python string marked-up.
+{{ variable }}
+
+Tags provide arbitary logic in the rendering process.
