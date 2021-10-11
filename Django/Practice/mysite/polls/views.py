@@ -23,7 +23,7 @@ def detail(request, question_id):
     return render(request, template, context)
 
 
-def result(requst, question_id):
+def results(requst, question_id):
     return HttpResponse(f"You're looking at results of question {question_id}")
 
 
