@@ -1,0 +1,8 @@
+#index-page-heading {
+	text-align: center;
+	border: 2px solid green;
+}
+
+#menu-buttons {
+	align-items: flex-start;
+}

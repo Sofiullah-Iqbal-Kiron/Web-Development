@@ -1,0 +1,3 @@
+Bootstrap is the world's most popular framework for building responsive, mobile-first sites. Nowdays, React-Bootstrap replaces this with more mordanity.
+
+Just type doc and hit enter on vscode to autofill with basic html structure.

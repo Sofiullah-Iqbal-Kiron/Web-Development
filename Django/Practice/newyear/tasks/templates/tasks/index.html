@@ -1,0 +1,16 @@
+{% extends 'tasks/layout.html' %}
+
+<!-- Context: tasks(list) -->
+
+{% block title %}
+	Tasks app
+{% endblock title %}
+
+{% block body %}
+    <ul>
+        {% for t in tasks %}
+            <li>{{ t }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'tasks:add' %}">Add a new task.</a>
+{% endblock body%}

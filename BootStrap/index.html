@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bootstrap-5 learning</title>
+
+		<!-- Weblink to add bootstrap css. -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+
+		<!-- CSS manually written -->
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<div id="index-page-heading" class="alert alert-info">
+			<div id="heading">
+				<h1>Isaac College</h1>
+			</div>
+			<div
+				class="btn-group"
+				role="group"
+				aria-label="Button group with nested dropdown"
+			>
+				<button type="button" class="btn btn-success active">Home</button>
+
+				<div class="btn-group" role="group">
+					<button
+						id="btnGroupDrop1"
+						type="button"
+						class="btn btn-primary dropdown-toggle"
+						data-bs-toggle="dropdown"
+						aria-expanded="false"
+					>
+						CSE
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+						<li>
+							<a class="dropdown-item" href="#">Dropdown link</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#">Dropdown link</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="btn-group" role="group">
+					<button
+						id="btnGroupDrop1"
+						type="button"
+						class="btn btn-primary dropdown-toggle"
+						data-bs-toggle="dropdown"
+						aria-expanded="false"
+					>
+						Physics
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+						<li>
+							<a class="dropdown-item" href="#">Dropdown link</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#">Dropdown link</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="btn-group" role="group">
+					<button
+						id="btnGroupDrop1"
+						type="button"
+						class="btn btn-primary dropdown-toggle"
+						data-bs-toggle="dropdown"
+						aria-expanded="false"
+					>
+						Chemistry
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+						<li>
+							<a class="dropdown-item" href="#">Dropdown link</a>
+						</li>
+						<li>
+							<a class="dropdown-item" href="#">Dropdown link</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="home-content">
+			Here is the home contents. Hello site visitors, what's up all?
+		</div>
+	</body>
+</html>

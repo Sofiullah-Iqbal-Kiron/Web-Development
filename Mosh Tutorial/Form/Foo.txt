@@ -1,0 +1,19 @@
+FORM is an element that takes input from user/client and passes those to the server.
+
+Topics would be:
+1. Building forms.
+2. Styling forms.
+3. Text fields.
+4. Data lists.
+5. Drop-down lists.
+6. Check boxes.
+7. Radio buttons.
+8. Sliders.
+9. File inputs.
+10. Hidden files.
+11. Data validation.
+12. Submitting forms.
+
+Description:
+1. Build forms using <form></form> tag.
+2. To wrap some code select those and go to the command pallet

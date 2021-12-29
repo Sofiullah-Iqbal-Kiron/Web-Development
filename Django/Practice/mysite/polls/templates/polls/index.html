@@ -1,27 +1,15 @@
-{# context: latest_question_list #}
-
-{% extends 'polls/base.html' %} 
-
-{% block title %}
-    Polls Index
-{% endblock title %}
-
-{% block styles %}
-    <style>
-        h1{
-            background-color: yellow;
-        }
-        a{
-            text-decoration: none;
-        }
-    </style>
-{% endblock %}
-
-{% block body %}
-    {# put body elements here #}
+<html>
+<body>
+{% if latest_question_list %}
     <ul>
-        {% for q in latest_question_list %}
-            <li><a href="{% url 'polls:detail' q.id %}">{{ q.question_text }}</a></li>
-        {% endfor %}
+	    {% for question in latest_question_list %}
+	    <li>
+		    <a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a>
+	    </li>
+	    {% endfor %}
     </ul>
-{% endblock body %}
+{% else %}
+    <p>No polls available.</p>
+{% endif %}
+</body>
+</html>

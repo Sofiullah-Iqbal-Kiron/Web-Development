@@ -1,0 +1,16 @@
+<!-- students, num_of_students -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Student information index</title>
+	</head>
+	<body>
+		<h2>Hello my students: (available {{ num_of_students }})</h2>
+		<ol>
+            {% for s in students %}
+                <li>{{ s.first_name }}</li>
+            {% endfor %}
+        </ol>
+	</body>
+</html>
