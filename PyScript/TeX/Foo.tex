@@ -1,0 +1,45 @@
+% Set margin to 2.3cm for mobile view compatibility
+% I use "extsizes" package to increase article size manually. This package allows 8pt, 9pt, 10pt, 11pt, 12pt,  14pt, 17pt and 20 pt text. Documentclass must be extarticle. But why the geometry package is not working after including extsizes?
+% Syntax text color: \textcolor{red}{}
+% Example text color: \textcolor{red!70}{}
+% New command for red-teletype text: \R{\T{}}
+% F1 (fn + f1 on laptop) for quick build.
+
+\documentclass[12 pt, letterpaper]{extarticle}
+
+\usepackage[document]{ragged2e}
+\usepackage[margin=2.3cm]{geometry}
+\usepackage
+{
+	xcolor,
+	graphicx, % \includegraphics and graphics related
+	extsizes, % increase extarticle size manually
+	hyperref,
+}
+
+\newcommand{\R}{\textcolor{red}} % Just replacement.
+\newcommand{\T}{\texttt}
+
+\title{\textcolor{blue}{PyScript: \textit{Run Python in Your HTML}}}
+\author
+{
+	\includegraphics[scale=0.2]{User Profile.jpg} \\ % scale is better scaling for picture. Scale 0.2 means 20 percent will be the printed size of main size.
+	\textit{Sofiullah Iqbal Kiron} \\
+	\R{\rule{11 cm}{2 pt}}
+}
+\date{15 may, 2022 \\ {\tiny Last compiled: \today}}
+
+\begin{document}
+	
+\maketitle
+
+\texttt{PyScript seems so lazy and not browser compatible. Use JavaScript instead that is so rich and most of all browsers support it as a compiled language. Basically JS developed as a web language. PyScript has to take long time to be rich as much as JS.}\\
+
+Hello from PyScript, a newly developed web technology. Ya Hoo!
+
+\begin{enumerate}
+	\item \href{https://github.com/pyscript/pyscript/blob/main/GETTING-STARTED.md}{Getting Started}.
+	\item 
+\end{enumerate}
+
+\end{document}
