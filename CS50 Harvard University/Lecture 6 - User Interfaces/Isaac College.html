@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Isaac College</title>
+
+    <!-- StyleSheet. -->
+    <link rel="stylesheet" href="Isaac College.css" />
+
+    <!-- Make it reactive. -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="Heading"></div>
+
+    <script type="text/babel">
+      // jsx codes.
+
+      function Heading(props) {
+        const heading = "Isaac College!";
+        const elementReturn = (
+          <div>
+            <h1>{heading}</h1>
+            <h3>
+              <i>Where you find fun.</i>
+            </h3>
+            <h4>It is "{new Date().toLocaleTimeString()}" now.</h4>
+            <button onClick={ClearHeading}>Clear Headings Content</button>
+          </div>
+        );
+
+        return elementReturn;
+      }
+
+      const HeadingRoot = ReactDOM.createRoot(
+        document.getElementById("Heading")
+      );
+      HeadingRoot.render(<Heading />);
+
+      function ClearHeading() {
+        HeadingRoot.unmount();
+        let heading = document.querySelector("#Heading");
+        heading.innerHTML = "All Cleared.";
+        heading.style = "background-color: red;";
+      }
+    </script>
+  </body>
+</html>

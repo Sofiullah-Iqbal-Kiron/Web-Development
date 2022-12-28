@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Bootstrap5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- Make it reactive, add/include/import react libraries and babel for translate to plain js from jsx. -->
+    <script
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <!-- TailwindCSS here -->
+    <link rel="stylesheet" href="tailwindout.css" />
+
+    <title>Indexing Tailwind CSS</title>
+  </head>
+  <body>
+    <div id="main-home-page" class="divide-y divide-dashed hover:divide-solid">
+      <div id="index-heading"></div>
+      <div
+        class="p-10 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500"
+        id="home-pages"
+      >
+        <b>Nothing to show now.</b>
+      </div>
+      <div id="page-changer-buttons" class="p-10 m-8 space-x-5">
+        <button
+          class="btn btn-primary outline outline-offset-2 outline-cyan-500"
+          onclick="RenderPage1()"
+        >
+          <b>Page 1</b>
+        </button>
+        <button
+          class="btn btn-primary outline outline-offset-2 outline-cyan-500"
+          onclick="RenderPage2()"
+        >
+          <b>Page 2</b>
+        </button>
+      </div>
+      <div id="newsfeed">
+        <div id="posts"></div>
+        <button onclick="postanew()">Post a new page</button>
+      </div>
+    </div>
+
+    <script type="text/babel">
+      // Index heading.
+      const index_heading = (
+        <h1 className="index-heading-component font-mono text-3xl font-bold">
+          Styling with TailwindCSS.
+        </h1>
+      );
+
+      const index_heading_root = ReactDOM.createRoot(
+        document.querySelector("#index-heading")
+      );
+      index_heading_root.render(index_heading);
+
+      // Pagination.
+      function FirstPage(props) {
+        const toRet = (
+          <p>
+            <b>Hello From first page. Welcome home guys. Chill.</b>
+          </p>
+        );
+        return toRet;
+      }
+
+      function SecondPage(props) {
+        const toRet = (
+          <p>
+            <b>Second page here. Chill bro.</b>
+          </p>
+        );
+
+        return toRet;
+      }
+
+      const home_pages_root = ReactDOM.createRoot(
+        document.querySelector("#home-pages")
+      );
+
+      function RenderPage1() {
+        home_pages_root.render(<FirstPage />);
+      }
+
+      function RenderPage2() {
+        home_pages_root.render(<SecondPage />);
+      }
+
+      // Post inside newsfeed.
+      function Post(props) {
+        const posts = <div>{props.postnew}</div>;
+
+        return posts;
+      }
+      const posts_root = ReactDOM.createRoot(document.querySelector("#posts"));
+      function postanew() {
+        const pre = document.getElementById("posts").innerText;
+        posts_root.render(<Post postnew={pre + "\n a new post"} />);
+      }
+    </script>
+  </body>
+</html>

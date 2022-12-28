@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<!-- React replaces any existing content inside DOM container. -->
+<!-- React classes/component functions must have name such first alphabet is capital. -->
+<!-- JSX comes with the full power of javascript. -->
+<!-- Components let you split the UI into independent reusable pieces,
+  and think about each piece in isolation. -->
+<!-- Conceptually, components are like javascript functions. They accepts arbitrary
+  inputs(props) and return React component describing what should appear on the screen. -->
+<!-- Function or Class component, whatever we gonna use, name must be start-with capital letter. -->
+
+<html>
+  <head>
+    <script
+      src="https://unpkg.com/react@18/umd/react.production.min.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <title>Hello React App</title>
+
+    <style>
+      div {
+        background-color: aqua;
+        margin: 10pt;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="somethingReact"></div>
+
+    <!-- scripts -->
+    <script type="text/babel">
+      let value = 0;
+
+      const varHello = <h1>hello from jsx constant</h1>;
+
+      function Hello(props) {
+        value += 1;
+        const componentHello = (
+          <div>
+            <h1>Hello from React: {value}</h1>
+            <p>this is describing me: {props.name}</p>
+            <button>{value}</button>
+            {varHello}
+          </div>
+        );
+
+        return componentHello;
+      }
+
+      function App(props) {
+        const componentApp = (
+          <div>
+            <Hello name="John" />
+            <Hello name="Mon" />
+            <Hello name="Duck" />
+            <button>{props.buttonName + " " + props.buttonNo}</button>
+          </div>
+        );
+
+        return componentApp;
+      }
+
+      const theRoot = ReactDOM.createRoot(
+        document.getElementById("somethingReact")
+      );
+      theRoot.render(<App buttonName="Click" buttonNo="1" />);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+p {
+  background-color: bisque;
+}
+
+button {
+  padding: 0.5cm;
+  background-color: mediumspringgreen;
+  border: 1px dashed red;
+  border-radius: 10px;
+}
+
+#Heading {
+  background-color: yellow;
+  padding: 1cm;
+  border-radius: 15px;
+  align-items: center;
+}
